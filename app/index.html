@@ -1,15 +1,22 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="filmApp">
 <head>
   <meta charset="utf-8">
   <title>Libreria Film 0.0.0</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
 </head>
-<body>
-
-  <p></p>
+<body ng-controller="FilmListCtrl">
+		Cerca : <input ng-model="query">
+  <ul>
+	<li ng-repeat="film in films | filter:query">
+		<img src="{{film.photo}}" width="150" height="70px">
+		{{film.name}}
+		<p>{{film.snippet}}</p>
+	</li>
+  </ul>
 
 </body>
 </html>
