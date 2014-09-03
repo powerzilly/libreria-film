@@ -1,0 +1,15 @@
+{
+  "name": "Libreria Film",
+  "description": "Catalogo film",
+  "version": "0.0.0",
+  "homepage": "https://localhost",
+  "license": "none",
+  "private": false,
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-mocks": "~1.2.x",
+    "jquery": "1.10.2",
+    "bootstrap": "~3.1.1"
+  }
+}
+
