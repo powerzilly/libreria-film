@@ -9,14 +9,17 @@
   <script src="js/controllers.js"></script>
 </head>
 <body ng-controller="FilmListCtrl">
-		Cerca : <input ng-model="query">
-  <ul>
-	<li ng-repeat="film in films | filter:query">
-		<img src="{{film.photo}}" width="150" height="70px">
-		{{film.name}}
-		<p>{{film.snippet}}</p>
-	</li>
-  </ul>
-
+<div id="module">
+    <div id="search-box">Cerca : <input ng-model="query"></div>
+    <div id="schede">
+        <ul>
+            <li ng-repeat="film in films | filter:query">
+                <img src="{{film.photo}}" width="150" height="70px">
+                <p><span class="title">{{film.name}}</span></p></br>
+                <p class="description">{{film.snippet}}</p>
+            </li>
+        </ul>
+    </div>
+</div>    
 </body>
 </html>
