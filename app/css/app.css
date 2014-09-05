@@ -71,9 +71,10 @@ table {
     border: 1px solid #000;
     padding: 10px;
     margin: 5px;
+    overflow: auto;
 }
 
 #schede li img{
-    float: none;
+    float: right;
 }
 

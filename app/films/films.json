@@ -1,0 +1,19 @@
+[
+ {
+  "name": "Film 1",
+  "snippet": "Descrizione Film 1",
+  "photo": "img/img1.jpg"
+ },
+ 
+ {
+  "name": "Film 2",
+  "snippet": "Descrizione Film 2",
+  "photo": "img/img2.jpg"
+ },
+    
+ {
+  "name": "Film 3",
+  "snippet": "Descrizione Film 3",
+  "photo": "img/img3.jpg"
+ }
+]
