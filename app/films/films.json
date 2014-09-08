@@ -1,17 +1,20 @@
 [
  {
+  "id": "film-1",     
   "name": "Film 1",
   "snippet": "Descrizione Film 1",
   "photo": "img/img1.jpg"
  },
  
  {
+  "id": "film-2",     
   "name": "Film 2",
   "snippet": "Descrizione Film 2",
   "photo": "img/img2.jpg"
  },
     
  {
+  "id": "film-3",     
   "name": "Film 3",
   "snippet": "Descrizione Film 3",
   "photo": "img/img3.jpg"

@@ -2,11 +2,17 @@
 
 /* Controllers */
 
-var filmApp = angular.module('filmApp', []);
+var filmControllers = angular.module('filmControllers', []);
 
-filmApp.controller('FilmListCtrl', function($scope, $http) {
+filmControllers.controller('FilmListCtrl', ['$scope', '$http',
+  function ($scope, $http) {
     $http.get('films/films.json').success(function(data) {
-  $scope.films = data;
-        });
-                                          
-});
+      $scope.films = data;
+    });
+
+  }]);
+
+filmControllers.controller('FilmDetailCtrl', ['$scope', '$routeParams',
+  function($scope, $routeParams) {
+    $scope.filmId = $routeParams.filmId;
+  }]);
