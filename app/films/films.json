@@ -1,22 +1,22 @@
 [
  {
   "id": "film-1",     
-  "name": "Film 1",
-  "snippet": "Descrizione Film 1",
+  "name": "The Day After Tomorrow - L'alba del giorno dopo",
+  "snippet": "The Day After Tomorrow - L'alba del giorno dopo è un film del 2004 diretto dal regista Roland Emmerich. È una storia di fantascienza apocalittica del filone catastrofico sceneggiata dallo stesso Emmerich.",
   "photo": "img/img1.jpg"
  },
  
  {
   "id": "film-2",     
-  "name": "Film 2",
-  "snippet": "Descrizione Film 2",
+  "name": "Underworld",
+  "snippet": "Underworld è un film del 2003, diretto da Len Wiseman. Il film ha avuto due seguiti: Underworld: Evolution, uscito nel 2006, e Underworld - Il risveglio, del 2012. Il 20 febbraio 2009 è uscito il prequel Underworld - La ribellione dei Lycans.",
   "photo": "img/img2.jpg"
  },
     
  {
   "id": "film-3",     
-  "name": "Film 3",
-  "snippet": "Descrizione Film 3",
+  "name": "Van Helsing",
+  "snippet": "Van Helsing è un film d'azione del 2004, scritto e diretto da Stephen Sommers, con Hugh Jackman e Kate Beckinsale. Il film è stato prodotto dalla Universal Pictures ed è basato sull'omonimo personaggio del romanzo Dracula di Bram Stoker.",
   "photo": "img/img3.jpg"
  }
 ]
