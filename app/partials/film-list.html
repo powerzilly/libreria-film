@@ -10,7 +10,7 @@
     <div id="schede">
         <ul>
             <li ng-repeat="film in films | filter:query | orderBy:orderProp">
-                <img src="{{film.photo}}" width="150" height="70px"></br>
+                <img src="{{film.photo}}" width="150" height="150px"></br>
                 <p><span class="title">{{film.name}}</span></br></p></br>
                 <p class="description">{{film.snippet}}</p></br>
                 <p class="category">Genere : {{film.category}}</p>
