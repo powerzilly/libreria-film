@@ -1,11 +1,21 @@
 <div id="module">
-    <div id="search-box">Cerca : <input ng-model="query"></div>
+    <div id="search-box">
+        Cerca : <input ng-model="query">
+        Ordina per: <select ng-model="orderProp">
+                        <option value="name">Alfabetico</option>
+                        <option value="age">Vecchio</option>
+                        <option value="category">Categoria</option>
+                    </select>
+    </div>
     <div id="schede">
         <ul>
-            <li ng-repeat="film in films | filter:query">
+            <li ng-repeat="film in films | filter:query | orderBy:orderProp">
                 <img src="{{film.photo}}" width="150" height="70px"></br>
-                <p><span class="title">{{film.name}}</span></p></br>
-                <p class="description">{{film.snippet}}</p>
+                <p><span class="title">{{film.name}}</span></br></p></br>
+                <p class="description">{{film.snippet}}</p></br>
+                <p class="category">Genere : {{film.category}}</p>
+                <p class="exit-date">Uscita : {{film.age}}</p>
+                <p class="director">Regia :  {{film.director}}</p>
                 <p><a href="#/films/{{film.id}}">{{film.name}}</a></p>
             </li>
         </ul>

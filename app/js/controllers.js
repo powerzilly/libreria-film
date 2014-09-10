@@ -9,7 +9,8 @@ filmControllers.controller('FilmListCtrl', ['$scope', '$http',
     $http.get('films/films.json').success(function(data) {
       $scope.films = data;
     });
-
+      
+    $scope.orderProp = 'name';  
   }]);
 
 filmControllers.controller('FilmDetailCtrl', ['$scope', '$routeParams',
