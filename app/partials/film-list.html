@@ -3,13 +3,18 @@
         Cerca : <input ng-model="query">
         Ordina per: <select ng-model="orderProp">
                         <option value="name">Alfabetico</option>
-                        <option value="age">Vecchio</option>
-                        <option value="category">Categoria</option>
+                        <option value="age">Uscita</option>
                     </select>
+        Categoria : <select autofocus ng-model="orderProp2">
+                        <option value="">All</option>
+                        <option value="fantasy">Fantasy</option>
+                        <option value="fantascienza">Fantascienza</option>
+                    </select>
+        <a href="#/films/upload"><button>Carica Film</button></a>
     </div>
     <div id="schede">
         <ul>
-            <li ng-repeat="film in films | filter:query | orderBy:orderProp">
+            <li ng-repeat="film in films | filter:query | filter : orderProp2 | orderBy:orderProp">
                 <img src="{{film.photo}}" width="150" height="150px"></br>
                 <p><span class="title">{{film.name}}</span></br></p></br>
                 <p class="description">{{film.snippet}}</p></br>
