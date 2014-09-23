@@ -10,6 +10,13 @@ filmControllers.controller('FilmListCtrl', ['$scope', '$http',
       $scope.films = data;
     });
       
+   $scope.save = function() {
+    /*$http.post('path/to/server/file/to/save/json', $scope.languages).then(function(data) {
+      $scope.msg = 'Data saved';
+    });*/
+    $scope.msg = 'Data sent: '+ JSON.stringify($scope.languages);
+  };
+      
     $scope.orderProp = 'name';  
   }]);
 
@@ -19,20 +26,5 @@ filmControllers.controller('FilmDetailCtrl', ['$scope', '$routeParams',
   }]);  
 
 
-filmControllers.controller('FilmUploadCtrl', ['$scope', '$http',
-  function filmUploadCtrl($scope, $http) {
-  $scope.update = function(film) {
-    $http.post('api/films', film)
-      .success(function(data, status) {
-         alert("Salvataggio effettuato!");
-      })
-      .error(function(data, status) {
-         alert("Si è verificato un problema durante il salvataggio!");
-      });
-  }
- 
-  $scope.reset = function() {
-    $scope.film = {};
-  }
-               
-  }]);      
+
+  

@@ -16,7 +16,7 @@ $routeProvider.
 }).
     when('/films/upload', {
         templateUrl: 'partials/film-upload.html',
-        controller: 'FilmUploadCtrl'
+        controller: 'FilmListCtrl'
 }).
     when('/films/:filmId', {
         templateUrl: 'partials/film-detail.html',
